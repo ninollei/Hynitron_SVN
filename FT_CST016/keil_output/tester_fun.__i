@@ -1,0 +1,1 @@
+-c --device DARMCM1 --li -g -O0 --apcs=interwork -I.\hyn_public_inc -I.\hyn_public_src -I.\hyn_controler_lib -I "C:\Keil\ARM\INC" -I "C:\Keil\ARM\INC\ARM" -o ".\keil_output\tester_fun.o" --omf_browse ".\keil_output\tester_fun.crf" --depend ".\keil_output\tester_fun.d" "hyn_public_src\tester_fun.c"

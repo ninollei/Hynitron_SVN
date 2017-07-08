@@ -1,0 +1,21 @@
+*** Creating Trace Output File '.\keil_output\cst148_tester.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\keil_output\system_boot.o"'
+### List of Objects: adding '".\keil_output\main.o"'
+### List of Objects: adding '".\keil_output\tester_fun.o"'
+### List of Objects: adding '".\keil_output\fwi2c.o"'
+### ADS-LD Command completed:
+--device DARMCM1 ".\keil_output\system_boot.o" ".\keil_output\main.o" ".\keil_output\tester_fun.o" ".\keil_output\fwi2c.o" --ro-base 0x00000000 --entry 0x00000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\cst148_tester.map" -o ".\keil_output\cst148_tester.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\keil_output\cst148_tester.axf'
+### ADS-LD Command File: '.\keil_output\cst148_tester.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\keil_output\cst148_tester.lnp', Handle=0x0000024C
+### Writing '.lnp' file
+### ADS-LD Command file '.\keil_output\cst148_tester.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

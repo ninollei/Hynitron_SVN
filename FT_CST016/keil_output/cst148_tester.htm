@@ -1,0 +1,656 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [.\keil_output\cst148_tester.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image .\keil_output\cst148_tester.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, RVCT4.0 [Build 524]: Last Updated: Fri Apr 14 11:01:50 2017
+<BR><P>
+<H3>Maximum Stack Usage =        184 bytes + Unknown(Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+Reset_Handler &rArr; main &rArr; chip_acquire_ptm &rArr; chip_trim_read &rArr; NVM_ID_XDM_read &rArr; fwi2c_read_registers &rArr; fwi2c_getBytes
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[1fb1410]">Reset_Handler</a>
+ <LI><a href="#[1fb1488]">hardfault_handler</a>
+ <LI><a href="#[1fb144c]">sleep_timer_irq_handler</a>
+ <LI><a href="#[1faa714]">__I$use$semihosting</a>
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[1fae698]"></a>__main</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, __main.o(!!!main))
+<BR><BR>[Calls]<UL><LI><a href="#[1fa81d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+<LI><a href="#[1fae56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
+</UL>
+
+<P><STRONG><a name="[1fa81d0]"></a>__scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter))
+<BR><BR>[Called By]<UL><LI><a href="#[1fae698]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+</UL>
+
+<P><STRONG><a name="[1fa8194]"></a>__scatterload_rt2</STRONG> (Thumb, 52 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1fae56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
+</UL>
+
+<P><STRONG><a name="[1fa8158]"></a>__scatterload_rt2_thumb_only</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+
+<P><STRONG><a name="[1fa811c]"></a>__scatterload_null</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+
+<P><STRONG><a name="[1fa7f78]"></a>__scatterload_copy</STRONG> (Thumb, 26 bytes, Stack size unknown bytes, __scatter_copy.o(!!handler_copy), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1fa7f78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1fa7f78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
+</UL>
+
+<P><STRONG><a name="[1fa7e88]"></a>__scatterload_zeroinit</STRONG> (Thumb, 28 bytes, Stack size unknown bytes, __scatter_zi.o(!!handler_zi), UNUSED)
+
+<P><STRONG><a name="[1fad6a8]"></a>__rt_lib_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit.o(.ARM.Collect$$libinit$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[1fae0bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_li
+</UL>
+
+<P><STRONG><a name="[1fabac4]"></a>__rt_lib_init_alloca_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002A))
+
+<P><STRONG><a name="[1fabb3c]"></a>__rt_lib_init_argv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000028))
+
+<P><STRONG><a name="[1fabefc]"></a>__rt_lib_init_atexit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000017))
+
+<P><STRONG><a name="[1fabd94]"></a>__rt_lib_init_clock_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001D))
+
+<P><STRONG><a name="[1fab9d4]"></a>__rt_lib_init_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002E))
+
+<P><STRONG><a name="[1faba4c]"></a>__rt_lib_init_exceptions_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002C))
+
+<P><STRONG><a name="[1fabe0c]"></a>__rt_lib_init_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001B))
+
+<P><STRONG><a name="[1fabd1c]"></a>__rt_lib_init_getenv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001F))
+
+<P><STRONG><a name="[1fac2f8]"></a>__rt_lib_init_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000006))
+
+<P><STRONG><a name="[1fac154]"></a>__rt_lib_init_lc_collate_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000D))
+
+<P><STRONG><a name="[1fac0dc]"></a>__rt_lib_init_lc_ctype_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000F))
+
+<P><STRONG><a name="[1fac064]"></a>__rt_lib_init_lc_monetary_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000011))
+
+<P><STRONG><a name="[1fabfec]"></a>__rt_lib_init_lc_numeric_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000013))
+
+<P><STRONG><a name="[1fabf74]"></a>__rt_lib_init_lc_time_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000015))
+
+<P><STRONG><a name="[1fac208]"></a>__rt_lib_init_rand_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000A))
+
+<P><STRONG><a name="[1fab998]"></a>__rt_lib_init_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002F))
+
+<P><STRONG><a name="[1fabe84]"></a>__rt_lib_init_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000019))
+
+<P><STRONG><a name="[1fabca4]"></a>__rt_lib_init_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000021))
+
+<P><STRONG><a name="[1fac280]"></a>__rt_lib_init_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000008))
+
+<P><STRONG><a name="[1faaa5c]"></a>__rt_lib_shutdown</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown.o(.ARM.Collect$$libshutdown$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[1fab254]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_ls
+</UL>
+
+<P><STRONG><a name="[1fa9df0]"></a>__rt_lib_shutdown_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000006))
+
+<P><STRONG><a name="[1fa9c10]"></a>__rt_lib_shutdown_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000E))
+
+<P><STRONG><a name="[1fa9bd4]"></a>__rt_lib_shutdown_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F))
+
+<P><STRONG><a name="[1fa9d3c]"></a>__rt_lib_shutdown_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000009))
+
+<P><STRONG><a name="[1fa9ea4]"></a>__rt_lib_shutdown_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000003))
+
+<P><STRONG><a name="[1fa9cc4]"></a>__rt_lib_shutdown_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000B))
+
+<P><STRONG><a name="[1fae56c]"></a>__rt_entry</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry.o(.ARM.Collect$$rtentry$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[1fa8194]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_rt2
+<LI><a href="#[1fae698]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+</UL>
+
+<P><STRONG><a name="[1fae170]"></a>__rt_entry_presh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$00000002))
+
+<P><STRONG><a name="[1faddec]"></a>__rt_entry_sh</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry4.o(.ARM.Collect$$rtentry$$00000004))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44 + Unknown Stack Size
+<LI>Call Chain = __rt_entry_sh &rArr; __user_setup_stackheap &rArr; __user_initial_stackheap
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1fadc84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
+</UL>
+
+<P><STRONG><a name="[1fae0bc]"></a>__rt_entry_li</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$0000000A))
+<BR><BR>[Calls]<UL><LI><a href="#[1fad6a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init
+</UL>
+
+<P><STRONG><a name="[1fae0f8]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$00000009))
+
+<P><STRONG><a name="[1fae008]"></a>__rt_entry_main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$0000000D))
+<BR><BR>[Stack]<UL><LI>Max Depth = 176 + Unknown Stack Size
+<LI>Call Chain = __rt_entry_main &rArr; main &rArr; chip_acquire_ptm &rArr; chip_trim_read &rArr; NVM_ID_XDM_read &rArr; fwi2c_read_registers &rArr; fwi2c_getBytes
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1fadaa4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
+<LI><a href="#[1fb135c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1fae044]"></a>__rt_entry_postli_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$0000000C))
+
+<P><STRONG><a name="[1face74]"></a>__rt_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit.o(.ARM.Collect$$rtexit$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[1fadaa4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
+</UL>
+
+<P><STRONG><a name="[1fab254]"></a>__rt_exit_ls</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000003))
+<BR><BR>[Calls]<UL><LI><a href="#[1faaa5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_shutdown
+</UL>
+
+<P><STRONG><a name="[1fab290]"></a>__rt_exit_prels_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000002))
+
+<P><STRONG><a name="[1fab218]"></a>__rt_exit_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000004))
+<BR><BR>[Calls]<UL><LI><a href="#[1faaf48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_exit
+</UL>
+
+<P><STRONG><a name="[1faea94]"></a>__aeabi_memcpy4</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, rt_memcpy.o(.emb_text))
+<BR><BR>[Called By]<UL><LI><a href="#[1faea1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[1faf700]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_trim_default
+</UL>
+
+<P><STRONG><a name="[1faea58]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rt_memcpy.o(.emb_text), UNUSED)
+
+<P><STRONG><a name="[1fb1488]"></a>hardfault_handler</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, system_boot.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> system_boot.o(vectors)
+</UL>
+<P><STRONG><a name="[1fb144c]"></a>sleep_timer_irq_handler</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, system_boot.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> system_boot.o(vectors)
+</UL>
+<P><STRONG><a name="[1fb1410]"></a>Reset_Handler</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, system_boot.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 184<LI>Call Chain = Reset_Handler &rArr; main &rArr; chip_acquire_ptm &rArr; chip_trim_read &rArr; NVM_ID_XDM_read &rArr; fwi2c_read_registers &rArr; fwi2c_getBytes
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1fb135c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1fb13d4]"></a>__user_initial_stackheap</STRONG> (Thumb, 30 bytes, Stack size 36 bytes, system_boot.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = __user_initial_stackheap
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1fadc84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
+</UL>
+
+<P><STRONG><a name="[1fb135c]"></a>main</STRONG> (Thumb, 252 bytes, Stack size 40 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 176<LI>Call Chain = main &rArr; chip_acquire_ptm &rArr; chip_trim_read &rArr; NVM_ID_XDM_read &rArr; fwi2c_read_registers &rArr; fwi2c_getBytes
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1fb0330]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setAport
+<LI><a href="#[1fb036c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pullDownI2C
+<LI><a href="#[1fb03a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;outputTestInfo
+<LI><a href="#[1fb03e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initCSD
+<LI><a href="#[1fb0420]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay1ms
+<LI><a href="#[1fb045c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_vref_test
+<LI><a href="#[1fb0498]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_trim_read
+<LI><a href="#[1fb04d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_retrim_freq
+<LI><a href="#[1fb0510]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_pins_test
+<LI><a href="#[1fb054c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_mtp_write_test
+<LI><a href="#[1fb0588]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_freq_test
+<LI><a href="#[1fb05c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_acquire_ptm
+<LI><a href="#[1fb0600]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LHIASICPE
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1fae008]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
+<LI><a href="#[1fb1410]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Reset_Handler
+</UL>
+
+<P><STRONG><a name="[1fafa0c]"></a>setIDAC</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, tester_fun.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1faf778]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_idac_test
+<LI><a href="#[1fb03e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initCSD
+<LI><a href="#[1fb0510]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_pins_test
+</UL>
+
+<P><STRONG><a name="[1fb03e4]"></a>initCSD</STRONG> (Thumb, 78 bytes, Stack size 12 bytes, tester_fun.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = initCSD
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1fafa0c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setIDAC
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1fb135c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1fb0330]"></a>setAport</STRONG> (Thumb, 142 bytes, Stack size 12 bytes, tester_fun.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = setAport
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1faf688]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;trim_delay_640us
+<LI><a href="#[1faf778]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_idac_test
+<LI><a href="#[1faf9d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;reset_dut
+<LI><a href="#[1fb045c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_vref_test
+<LI><a href="#[1fb0510]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_pins_test
+<LI><a href="#[1fb0588]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_freq_test
+<LI><a href="#[1fb135c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1faf9d0]"></a>reset_dut</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, tester_fun.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = reset_dut &rArr; setAport
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1fb0330]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setAport
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1fb05c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_acquire_ptm
+</UL>
+
+<P><STRONG><a name="[1faf994]"></a>disable_slpTimer</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, tester_fun.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1faf91c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay250us
+<LI><a href="#[1fb0420]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay1ms
+</UL>
+
+<P><STRONG><a name="[1faf958]"></a>enable_slpTimer</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, tester_fun.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1faf91c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay250us
+<LI><a href="#[1fb0420]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay1ms
+</UL>
+
+<P><STRONG><a name="[1fb0420]"></a>delay1ms</STRONG> (Thumb, 32 bytes, Stack size 4 bytes, tester_fun.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = delay1ms
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1faf958]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;enable_slpTimer
+<LI><a href="#[1faf994]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disable_slpTimer
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1faf64c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_freq_output_test
+<LI><a href="#[1fb045c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_vref_test
+<LI><a href="#[1fb135c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1faf91c]"></a>delay250us</STRONG> (Thumb, 32 bytes, Stack size 4 bytes, tester_fun.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = delay250us
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1faf958]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;enable_slpTimer
+<LI><a href="#[1faf994]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disable_slpTimer
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1faf778]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_idac_test
+<LI><a href="#[1fb0510]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_pins_test
+<LI><a href="#[1fb05c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_acquire_ptm
+</UL>
+
+<P><STRONG><a name="[1faf8e0]"></a>delay10us</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, tester_fun.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1faf868]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_scall
+</UL>
+
+<P><STRONG><a name="[1faf8a4]"></a>getAPortVal</STRONG> (Thumb, 76 bytes, Stack size 16 bytes, tester_fun.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = getAPortVal
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1faf778]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_idac_test
+<LI><a href="#[1fb045c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_vref_test
+<LI><a href="#[1fb0510]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_pins_test
+</UL>
+
+<P><STRONG><a name="[1fb036c]"></a>pullDownI2C</STRONG> (Thumb, 74 bytes, Stack size 0 bytes, tester_fun.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1fb135c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1fb03a8]"></a>outputTestInfo</STRONG> (Thumb, 260 bytes, Stack size 0 bytes, tester_fun.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1fb135c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1faf868]"></a>chip_scall</STRONG> (Thumb, 230 bytes, Stack size 8 bytes, tester_fun.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = chip_scall &rArr; fwi2c_getBytes
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1faf3b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_stop
+<LI><a href="#[1faf3f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_start
+<LI><a href="#[1faf430]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_sendBytes
+<LI><a href="#[1faf520]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_getBytes
+<LI><a href="#[1faf8e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay10us
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1faf7b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_retrim_writeback
+<LI><a href="#[1faf7f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVM_ID_XDM_read
+<LI><a href="#[1fb054c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_mtp_write_test
+<LI><a href="#[1fb05c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_acquire_ptm
+<LI><a href="#[1fb0600]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LHIASICPE
+</UL>
+
+<P><STRONG><a name="[1faf82c]"></a>time_parameters_set</STRONG> (Thumb, 86 bytes, Stack size 8 bytes, tester_fun.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = time_parameters_set &rArr; fwi2c_write_register &rArr; fwi2c_sendBytes
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1faf304]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_write_register
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1faf7b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_retrim_writeback
+<LI><a href="#[1fb054c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_mtp_write_test
+<LI><a href="#[1fb0600]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LHIASICPE
+</UL>
+
+<P><STRONG><a name="[1faf7f0]"></a>NVM_ID_XDM_read</STRONG> (Thumb, 78 bytes, Stack size 24 bytes, tester_fun.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = NVM_ID_XDM_read &rArr; fwi2c_read_registers &rArr; fwi2c_getBytes
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1faea1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[1faf46c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_read_registers
+<LI><a href="#[1faf868]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_scall
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1fb0498]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_trim_read
+</UL>
+
+<P><STRONG><a name="[1fb0498]"></a>chip_trim_read</STRONG> (Thumb, 94 bytes, Stack size 24 bytes, tester_fun.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = chip_trim_read &rArr; NVM_ID_XDM_read &rArr; fwi2c_read_registers &rArr; fwi2c_getBytes
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1faf7f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVM_ID_XDM_read
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1fb05c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_acquire_ptm
+<LI><a href="#[1fb135c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1faf7b4]"></a>chip_retrim_writeback</STRONG> (Thumb, 196 bytes, Stack size 16 bytes, tester_fun.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 76<LI>Call Chain = chip_retrim_writeback &rArr; fwi2c_write_registers &rArr; fwi2c_sendBytes
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1faf2c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_write_registers
+<LI><a href="#[1faf82c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;time_parameters_set
+<LI><a href="#[1faf868]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_scall
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1fb04d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_retrim_freq
+</UL>
+
+<P><STRONG><a name="[1fb05c4]"></a>chip_acquire_ptm</STRONG> (Thumb, 240 bytes, Stack size 16 bytes, tester_fun.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = chip_acquire_ptm &rArr; chip_trim_read &rArr; NVM_ID_XDM_read &rArr; fwi2c_read_registers &rArr; fwi2c_getBytes
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1fae878]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+<LI><a href="#[1faf304]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_write_register
+<LI><a href="#[1faf340]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_w1
+<LI><a href="#[1faf37c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_w0
+<LI><a href="#[1faf4e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_init
+<LI><a href="#[1faf868]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_scall
+<LI><a href="#[1faf91c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay250us
+<LI><a href="#[1faf9d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;reset_dut
+<LI><a href="#[1fb0498]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_trim_read
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1fb135c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1fb0510]"></a>chip_pins_test</STRONG> (Thumb, 480 bytes, Stack size 32 bytes, tester_fun.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 76<LI>Call Chain = chip_pins_test &rArr; fwi2c_write_register &rArr; fwi2c_sendBytes
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1faf304]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_write_register
+<LI><a href="#[1faf8a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getAPortVal
+<LI><a href="#[1faf91c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay250us
+<LI><a href="#[1fafa0c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setIDAC
+<LI><a href="#[1fb0330]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setAport
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1fb135c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1fb045c]"></a>chip_vref_test</STRONG> (Thumb, 166 bytes, Stack size 16 bytes, tester_fun.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = chip_vref_test &rArr; fwi2c_write_register &rArr; fwi2c_sendBytes
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1faf304]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_write_register
+<LI><a href="#[1faf8a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getAPortVal
+<LI><a href="#[1fb0330]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setAport
+<LI><a href="#[1fb0420]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay1ms
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1fb135c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1faf778]"></a>chip_idac_test</STRONG> (Thumb, 208 bytes, Stack size 16 bytes, tester_fun.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1faf304]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_write_register
+<LI><a href="#[1faf8a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getAPortVal
+<LI><a href="#[1faf91c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay250us
+<LI><a href="#[1fafa0c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setIDAC
+<LI><a href="#[1fb0330]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setAport
+</UL>
+
+<P><STRONG><a name="[1faf73c]"></a>delay_640us</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, tester_fun.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1faf688]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;trim_delay_640us
+<LI><a href="#[1fb0588]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_freq_test
+</UL>
+
+<P><STRONG><a name="[1fb0588]"></a>chip_freq_test</STRONG> (Thumb, 254 bytes, Stack size 16 bytes, tester_fun.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = chip_freq_test &rArr; fwi2c_read_register &rArr; fwi2c_getBytes
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1faf304]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_write_register
+<LI><a href="#[1faf4a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_read_register
+<LI><a href="#[1faf73c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_640us
+<LI><a href="#[1fb0330]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setAport
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1fb04d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_retrim_freq
+<LI><a href="#[1fb135c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1fb04d4]"></a>chip_retrim_freq</STRONG> (Thumb, 128 bytes, Stack size 32 bytes, tester_fun.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = chip_retrim_freq &rArr; chip_retrim_writeback &rArr; fwi2c_write_registers &rArr; fwi2c_sendBytes
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1faf304]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_write_register
+<LI><a href="#[1faf7b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_retrim_writeback
+<LI><a href="#[1fb0588]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_freq_test
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1fb135c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1fb054c]"></a>chip_mtp_write_test</STRONG> (Thumb, 356 bytes, Stack size 24 bytes, tester_fun.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = chip_mtp_write_test &rArr; fwi2c_write_registers &rArr; fwi2c_sendBytes
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1faec74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
+<LI><a href="#[1faf2c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_write_registers
+<LI><a href="#[1faf82c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;time_parameters_set
+<LI><a href="#[1faf868]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_scall
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1fb135c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1fb0600]"></a>LHIASICPE</STRONG> (Thumb, 508 bytes, Stack size 24 bytes, tester_fun.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = LHIASICPE &rArr; fwi2c_write_registers &rArr; fwi2c_sendBytes
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1faf2c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_write_registers
+<LI><a href="#[1faf82c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;time_parameters_set
+<LI><a href="#[1faf868]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_scall
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1fb135c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1faf700]"></a>chip_trim_default</STRONG> (Thumb, 38 bytes, Stack size 72 bytes, tester_fun.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1faea94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+</UL>
+
+<P><STRONG><a name="[1faf6c4]"></a>chip_trim_init</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, tester_fun.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1faf304]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_write_register
+</UL>
+
+<P><STRONG><a name="[1faf688]"></a>trim_delay_640us</STRONG> (Thumb, 50 bytes, Stack size 4 bytes, tester_fun.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1faf73c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_640us
+<LI><a href="#[1fb0330]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setAport
+</UL>
+
+<P><STRONG><a name="[1faf64c]"></a>chip_freq_output_test</STRONG> (Thumb, 104 bytes, Stack size 8 bytes, tester_fun.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1faf304]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_write_register
+<LI><a href="#[1fb0420]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay1ms
+</UL>
+
+<P><STRONG><a name="[1faf4e4]"></a>fwi2c_init</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, fwi2c.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1fb05c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_acquire_ptm
+</UL>
+
+<P><STRONG><a name="[1faef44]"></a>fwi2c_dly</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, fwi2c.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1faf3b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_stop
+<LI><a href="#[1faf3f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_start
+<LI><a href="#[1faf430]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_sendBytes
+<LI><a href="#[1faf520]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_getBytes
+</UL>
+
+<P><STRONG><a name="[1faf37c]"></a>fwi2c_w0</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, fwi2c.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1fb05c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_acquire_ptm
+</UL>
+
+<P><STRONG><a name="[1faf340]"></a>fwi2c_w1</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, fwi2c.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1fb05c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_acquire_ptm
+</UL>
+
+<P><STRONG><a name="[1faf3f4]"></a>fwi2c_start</STRONG> (Thumb, 68 bytes, Stack size 4 bytes, fwi2c.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = fwi2c_start
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1faef44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_dly
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1faf2c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_write_registers
+<LI><a href="#[1faf304]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_write_register
+<LI><a href="#[1faf46c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_read_registers
+<LI><a href="#[1faf4a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_read_register
+<LI><a href="#[1faf868]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_scall
+</UL>
+
+<P><STRONG><a name="[1faf3b8]"></a>fwi2c_stop</STRONG> (Thumb, 52 bytes, Stack size 4 bytes, fwi2c.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = fwi2c_stop
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1faef44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_dly
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1faf2c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_write_registers
+<LI><a href="#[1faf304]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_write_register
+<LI><a href="#[1faf46c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_read_registers
+<LI><a href="#[1faf4a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_read_register
+<LI><a href="#[1faf868]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_scall
+</UL>
+
+<P><STRONG><a name="[1faf430]"></a>fwi2c_sendBytes</STRONG> (Thumb, 210 bytes, Stack size 20 bytes, fwi2c.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = fwi2c_sendBytes
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1faef44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_dly
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1faf2c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_write_registers
+<LI><a href="#[1faf304]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_write_register
+<LI><a href="#[1faf46c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_read_registers
+<LI><a href="#[1faf4a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_read_register
+<LI><a href="#[1faf868]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_scall
+</UL>
+
+<P><STRONG><a name="[1faf520]"></a>fwi2c_getBytes</STRONG> (Thumb, 190 bytes, Stack size 32 bytes, fwi2c.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = fwi2c_getBytes
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1faef44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_dly
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1faf46c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_read_registers
+<LI><a href="#[1faf4a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_read_register
+<LI><a href="#[1faf868]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_scall
+</UL>
+
+<P><STRONG><a name="[1faf304]"></a>fwi2c_write_register</STRONG> (Thumb, 90 bytes, Stack size 24 bytes, fwi2c.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = fwi2c_write_register &rArr; fwi2c_sendBytes
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1faf3b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_stop
+<LI><a href="#[1faf3f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_start
+<LI><a href="#[1faf430]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_sendBytes
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1faf64c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_freq_output_test
+<LI><a href="#[1faf6c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_trim_init
+<LI><a href="#[1faf778]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_idac_test
+<LI><a href="#[1faf82c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;time_parameters_set
+<LI><a href="#[1fb045c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_vref_test
+<LI><a href="#[1fb04d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_retrim_freq
+<LI><a href="#[1fb0510]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_pins_test
+<LI><a href="#[1fb0588]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_freq_test
+<LI><a href="#[1fb05c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_acquire_ptm
+</UL>
+
+<P><STRONG><a name="[1faf4a8]"></a>fwi2c_read_register</STRONG> (Thumb, 104 bytes, Stack size 24 bytes, fwi2c.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = fwi2c_read_register &rArr; fwi2c_getBytes
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1faf3b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_stop
+<LI><a href="#[1faf3f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_start
+<LI><a href="#[1faf430]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_sendBytes
+<LI><a href="#[1faf520]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_getBytes
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1fb0588]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_freq_test
+</UL>
+
+<P><STRONG><a name="[1faf2c8]"></a>fwi2c_write_registers</STRONG> (Thumb, 112 bytes, Stack size 40 bytes, fwi2c.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = fwi2c_write_registers &rArr; fwi2c_sendBytes
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1faf3b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_stop
+<LI><a href="#[1faf3f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_start
+<LI><a href="#[1faf430]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_sendBytes
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1faf7b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_retrim_writeback
+<LI><a href="#[1fb054c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_mtp_write_test
+<LI><a href="#[1fb0600]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LHIASICPE
+</UL>
+
+<P><STRONG><a name="[1faf46c]"></a>fwi2c_read_registers</STRONG> (Thumb, 124 bytes, Stack size 40 bytes, fwi2c.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = fwi2c_read_registers &rArr; fwi2c_getBytes
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1faf3b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_stop
+<LI><a href="#[1faf3f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_start
+<LI><a href="#[1faf430]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_sendBytes
+<LI><a href="#[1faf520]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwi2c_getBytes
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1faf7f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVM_ID_XDM_read
+</UL>
+
+<P><STRONG><a name="[1faec74]"></a>__aeabi_memset</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, aeabi_memset.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __aeabi_memset
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1fae8b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_memset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1fb054c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_mtp_write_test
+</UL>
+
+<P><STRONG><a name="[1faea1c]"></a>__aeabi_memcpy</STRONG> (Thumb, 130 bytes, Stack size 24 bytes, rt_memcpy.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __aeabi_memcpy
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1faea94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1faf7f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVM_ID_XDM_read
+</UL>
+
+<P><STRONG><a name="[1fae9e0]"></a>__rt_memcpy</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, rt_memcpy.o(.text), UNUSED)
+
+<P><STRONG><a name="[1fae8f0]"></a>_memset_w</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, rt_memclr.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1fae788]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_memclr_w
+<LI><a href="#[1fae8b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_memset
+</UL>
+
+<P><STRONG><a name="[1fae8b4]"></a>_memset</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, rt_memclr.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[1fae8f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_memset_w
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1fae878]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+<LI><a href="#[1faec74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
+</UL>
+
+<P><STRONG><a name="[1fae878]"></a>__aeabi_memclr</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, rt_memclr.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[1fae8b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_memset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1fb05c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_acquire_ptm
+</UL>
+
+<P><STRONG><a name="[1fae83c]"></a>__rt_memclr</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rt_memclr.o(.text), UNUSED)
+
+<P><STRONG><a name="[1fae800]"></a>__aeabi_memclr4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rt_memclr.o(.text), UNUSED)
+
+<P><STRONG><a name="[1fae7c4]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rt_memclr.o(.text), UNUSED)
+
+<P><STRONG><a name="[1fae788]"></a>__rt_memclr_w</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, rt_memclr.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1fae8f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_memset_w
+</UL>
+
+<P><STRONG><a name="[1fadc84]"></a>__user_setup_stackheap</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, sys_stackheap_outer.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = __user_setup_stackheap &rArr; __user_initial_stackheap
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1fad018]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_perproc_libspace
+<LI><a href="#[1fb13d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_initial_stackheap
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1faddec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_sh
+</UL>
+
+<P><STRONG><a name="[1fadaa4]"></a>exit</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, exit.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[1face74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit
+<LI><a href="#[1fada2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_call_atexit_fns (Weak Reference)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1fae008]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
+</UL>
+
+<P><STRONG><a name="[1fad054]"></a>__user_libspace</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
+
+<P><STRONG><a name="[1fad018]"></a>__user_perproc_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1fadc84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
+</UL>
+
+<P><STRONG><a name="[1facfdc]"></a>__user_perthread_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
+
+<P><STRONG><a name="[1faaf48]"></a>_sys_exit</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, sys_exit.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1fab218]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_exit
+</UL>
+
+<P><STRONG><a name="[1faa714]"></a>__I$use$semihosting</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, use_no_semi.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> sys_exit.o(.text)
+</UL>
+<P><STRONG><a name="[1faa6d8]"></a>__use_no_semihosting_swi</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
+<P>
+<H3>
+Local Symbols
+</H3><P>
+<H3>
+Undefined Global Symbols
+</H3>
+<P><STRONG><a name="[1fada2c]"></a>_call_atexit_fns</STRONG> (ARM, 0 bytes, Stack size 0 bytes, UNDEFINED)
+<BR><BR>[Called By]<UL><LI><a href="#[1fadaa4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
+</UL>
+<HR></body></html>
